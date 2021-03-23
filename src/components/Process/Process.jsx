@@ -6,6 +6,7 @@ import classNames from 'classnames/bind';
 import transfer from '../../static/images/transfer.svg';
 import crowd from '../../static/images/crowd.svg';
 import safety from '../../static/images/safety.svg';
+import population from '../../static/images/population.svg';
 import arrowRight from '../../static/images/arrow-right.svg';
 
 const cn = classNames.bind(styles);
@@ -53,17 +54,23 @@ class Process extends React.Component {
               <h3 className={ cn('smallTitle', 'smallTitleWhite') }>Design guidelines</h3>
               <Row>
               <Col className={ styles.designGuidelinesCol } xs={ 4 }>
-                <div className={ styles.designGuideline }>
-                  <img src={ transfer } className={ styles.designGuideLineIcon } />
-                  <p className={ styles.designGuidelineText }>De doorstroom van mensen richting en vanuit Scheveningen moet worden bevorderd.</p>
-                </div>
-                <div className={ styles.designGuideline }>
-                  <img src={ crowd } className={ styles.designGuideLineIcon } />
-                  <p className={ styles.designGuidelineText }>Bezoekers moeten inzicht kunnen krijgen over de drukte in Scheveningen.</p>
-                </div>
-                <div className={ styles.designGuideline }>
-                  <img src={ safety } className={ styles.designGuideLineIcon } />
-                  <p className={ styles.designGuidelineText }>De veiligheid van de bezoekers moet gewaarborgd zijn en blijven.</p>
+                <div className={ styles.designGuidelinesWrapper }>
+                  <div className={ styles.designGuideline }>
+                    <img src={ crowd } className={ styles.designGuideLineIcon } />
+                    <p className={ styles.designGuidelineText }>Bezoekers moeten inzicht kunnen krijgen over de drukte in Scheveningen.</p>
+                  </div>
+                  <div className={ styles.designGuideline }>
+                    <img src={ transfer } className={ styles.designGuideLineIcon } />
+                    <p className={ styles.designGuidelineText }>De doorstroom van mensen richting en vanuit Scheveningen moet worden bevorderd.</p>
+                  </div>
+                  <div className={ styles.designGuideline }>
+                    <img src={ population } className={ styles.designGuideLineIcon } />
+                    <p className={ styles.designGuidelineText }>Het concept moet de bevolkingsverdeling op en rondom het strand bevorderen.</p>
+                  </div>
+                  <div className={ styles.designGuideline }>
+                    <img src={ safety } className={ styles.designGuideLineIcon } />
+                    <p className={ styles.designGuidelineText }>De veiligheid van de bezoekers moet gewaarborgd zijn en blijven.</p>
+                  </div>
                 </div>
               </Col>
               <Col className={ styles.designGuidelinesCol2 } xs={ 4 }>
